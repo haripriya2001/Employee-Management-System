@@ -8,8 +8,8 @@
 <style>
 body
 {
-    margin:0;
-    padding:0;
+        margin:0;
+        padding:0;
 	font-family:sans-serif;
 	background:#F0FFF0;
 }
@@ -90,8 +90,8 @@ input[type="button"]
 </head>
 <body>
 	<form class="form" action="CreateRegulation" method="post" >
-			 <h1 style="text-align:center ">Create Regulation</h1>
-			 <h3>Regulation Id:</h3>
+		    <h1 style="text-align:center ">Create Regulation</h1>
+		    <h3>Regulation Id:</h3>
 		     <input class="input" type="text" name="Regulation_Id" >
 		     <h3>Regulation Type:</h3>
 		     <input class="input" type="text" name="Regulation_Type" >
@@ -102,7 +102,7 @@ input[type="button"]
 		     <h3>Department Id:</h3>
 		     <input class="input" type="text" name="Department_Id" >
 		     <input  class="click" type="submit" value="ADD" >
-			 <input type="button" value="Home" onclick='location.href="AdminHome.jsp"'>
+	             <input type="button" value="Home" onclick='location.href="AdminHome.jsp"'>
 	</form>
 </body>
 </html>
