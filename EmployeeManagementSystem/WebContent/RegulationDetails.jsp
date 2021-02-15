@@ -10,12 +10,12 @@ body
 {
     margin:0;
     padding:0;
-	font-family:sans-serif;
-	background-color:#F0FFF0;
+    font-family:sans-serif;
+    background-color:#F0FFF0;
 }
 div
 {
-padding:50px 200px 50px 200px;
+     padding:50px 200px 50px 200px;
 }
 .link 
 {
@@ -25,16 +25,16 @@ padding:50px 200px 50px 200px;
     text-decoration:none;
     text-align:center;
     background-size:50px;
-	background:black;
-	display:block;
+    background:black;
+    display:block;
     margin:20px auto;
-	text-align:center;
-	border:2px solid #2ecc71;
-	padding:14px 25px;
-	color:white;
-	border-radius:24px;
-	transition:0.25s;
-	cursor:pointer;
+    text-align:center;
+    border:2px solid #2ecc71;
+    padding:14px 25px;
+    color:white;
+    border-radius:24px;
+    transition:0.25s;
+    cursor:pointer;
 }
 .link:hover
 {
@@ -44,7 +44,7 @@ padding:50px 200px 50px 200px;
 </head>
 <body>
 		<div>
-                  <a class="link" href="CreateRegulation.jsp" >Create Regulation</a>
+                              <a class="link" href="CreateRegulation.jsp" >Create Regulation</a>
 			      <a class="link" href="DisplayRegulation.jsp">Display Regulations</a>
 			      <a class="link" href="DisplayComments.jsp">Display Comments</a>
 		</div>
