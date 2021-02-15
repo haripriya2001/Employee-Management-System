@@ -8,8 +8,8 @@
 <style>
 body
 {
-    margin:0;
-    padding:0;
+        margin:0;
+        padding:0;
 	font-family:sans-serif;
 	background-color:#F0FFF0;
 }
@@ -20,15 +20,15 @@ div
 }
 .link 
 {
-    width:300px;
-    font-weight:bold;
-    text-transform:uppercase;
-    text-decoration:none;
-    text-align:center;
-    background-size:50px;
+        width:300px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	background-size:50px;
 	background:black;
 	display:block;
-    margin:20px auto;
+        margin:20px auto;
 	text-align:center;
 	border:2px solid #2ecc71;
 	padding:14px 25px;
