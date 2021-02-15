@@ -31,7 +31,7 @@ public class DisplayDepartment extends HttpServlet {
 		String dept_name;
 		try
 		{   
-			response.setContentType("text/html");
+		    response.setContentType("text/html");
 		    PrintWriter out = response.getWriter();
 		    out.println("<html>");
 		    out.println("<head><title>DEPARTMENTS</title><link rel='stylesheet' href='button.css'>");
@@ -50,18 +50,18 @@ public class DisplayDepartment extends HttpServlet {
 		    out.println("<th>DEPARTMENT ID</th>");
 		    out.println("<th>DEPARTMENT</th>");
 		    out.println("</tr>");
-			PreparedStatement statement=Login_db.getPreparedStatement("select distinct Department_Id,Department_Name from department");
-			ResultSet resultset=statement.executeQuery();
-			while(resultset.next())
-			{
+		    PreparedStatement statement=Login_db.getPreparedStatement("select distinct Department_Id,Department_Name from department");
+		    ResultSet resultset=statement.executeQuery();
+		    while(resultset.next())
+		    {
 				dept_Id=resultset.getInt(1);
 				dept_name=resultset.getString(2);
 				out.println("<tr><td>" + dept_Id+ "</td>");
 				out.println("<td>" + dept_name+ "</td></tr>");
-			}
-			out.println("</table>");
-			out.println("<input type='button' value='Home' onclick=\"location.href='AdminHome.jsp'\">");
-			out.println("</center></body></html>");
+		    }
+		   out.println("</table>");
+		   out.println("<input type='button' value='Home' onclick=\"location.href='AdminHome.jsp'\">");
+		   out.println("</center></body></html>");
 		}catch(Exception e)
 		{
 		e.printStackTrace();
