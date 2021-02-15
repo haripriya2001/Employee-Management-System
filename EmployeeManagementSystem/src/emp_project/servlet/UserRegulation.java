@@ -1,6 +1,5 @@
 package emp_project.servlet;
 import java.io.IOException;
-
 import java.io.PrintWriter;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import emp_project.db.Login_db;
 import emp_project.dao.*;
 
@@ -29,7 +27,6 @@ public class UserRegulation extends HttpServlet
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 		
-				
 	}
 		
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
@@ -44,15 +41,15 @@ public class UserRegulation extends HttpServlet
 			int UserId=Integer.parseInt(userId);
 			String dept_Id=request.getParameter("dept_Id");
 			int department_Id=Integer.parseInt(dept_Id);
-	        PreparedStatement statement=Login_db.getPreparedStatement("select * from regulations where Department_Id="+department_Id);
+	                PreparedStatement statement=Login_db.getPreparedStatement("select * from regulations where Department_Id="+department_Id);
 			ResultSet resultset=statement.executeQuery();
 	        while(resultset.next())
 		    {   
 	        	
-				int Regulation_Id=resultset.getInt(1);
-				String Regulation_Type=resultset.getString(2);
-				String Regulation_Details=resultset.getString(3);
-				String Creation_Date=resultset.getString(4);
+		            int Regulation_Id=resultset.getInt(1);
+		       	    String Regulation_Type=resultset.getString(2);
+			    String Regulation_Details=resultset.getString(3);
+			    String Creation_Date=resultset.getString(4);
 			    int Dept_Id=resultset.getInt(5);
 			    System.out.println(Regulation_Id);
 			    System.out.println(Creation_Date);
@@ -62,7 +59,7 @@ public class UserRegulation extends HttpServlet
 			   
 			        if(validate.equals("Yes"))
 				    {
-				    out.println("<html><head><link rel='stylesheet' href='regulation.css'></head><body><form class='form' action='AddComments' method='post'><h1>REGULATION</h1>");
+				        out.println("<html><head><link rel='stylesheet' href='regulation.css'></head><body><form class='form' action='AddComments' method='post'><h1>REGULATION</h1>");
 					out.println("<h3>REGULATION ID</h3>");
 					out.println(" <input class='input' style='text-align:center; color:#2ecc71;' type='text' name='reg_Id' value='"+Regulation_Id+"'readonly>");
 					out.println("<h3>REGULATION TYPE</h3>");
@@ -84,15 +81,15 @@ public class UserRegulation extends HttpServlet
 			        
 			    }
 	       
-	        String validation=(String)session.getAttribute("validate");
-	        if( validation==null || validation.equals("No"))
-	        {
-	        	response.sendRedirect("Regulation.jsp");
-	        }
-	        else 
-	        {
-	        	response.sendRedirect("Regulation.jsp");
-	        }
+			String validation=(String)session.getAttribute("validate");
+			if( validation==null || validation.equals("No"))
+			{
+				response.sendRedirect("Regulation.jsp");
+			}
+			else 
+			{
+				response.sendRedirect("Regulation.jsp");
+			}
 	        
 	        
 	        
