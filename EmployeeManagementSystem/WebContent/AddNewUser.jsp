@@ -9,8 +9,8 @@
 
 <style>
 body{
-    margin:0;
-    padding:0;
+        margin:0;
+        padding:0;
 	font-family:sans-serif;
 	background-color:#F0FFF0;
 }
@@ -86,7 +86,7 @@ input[type="button"]
 </head>
 <body>
 <form class="form" action="AddUser" method="post" >
-			<h1 style="text-align:center">Add New Employee Details</h1>
+		<h1 style="text-align:center">Add New Employee Details</h1>
       		<input class="input" type="text" name="Employee_Id" placeholder="Employee_Id">
       		 <input class="input" type="text" name="First_Name" placeholder="First Name">
       		 <input class="input" type="text" name="Last_Name" placeholder="Last Name">
@@ -97,8 +97,8 @@ input[type="button"]
       		 <input class="input" type="password" name="password" placeholder="Set Password">
       		 <input class="input" type="text" name="Role" value="employee" readonly>
       		 <input  class="click" type="submit" value="ADD" >
-		     <input type="button" value="Home" onclick='location.href="AdminHome.jsp"'>
-		     </form>
+		 <input type="button" value="Home" onclick='location.href="AdminHome.jsp"'>
+ </form>
 
 </body>
 </html>
