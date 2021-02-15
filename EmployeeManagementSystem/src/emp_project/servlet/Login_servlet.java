@@ -14,7 +14,7 @@ import emp_project.servlet.Login_servlet;
 @WebServlet("/login_servlet")
 public class Login_servlet extends HttpServlet 
 {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     public Login_servlet() 
     {
         super();
@@ -22,8 +22,7 @@ public class Login_servlet extends HttpServlet
     }
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 	}
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
@@ -32,32 +31,29 @@ public class Login_servlet extends HttpServlet
 		emp_project.bean.Login_bean loginbean = new Login_bean();
 		loginbean.setUserName(userName);
 		loginbean.setPassWord(passWord);
-	
-		
-		try
+                try
 		{
-			
 			String validate=Login_dao.authenticateLoginUser(loginbean);
 			if(validate=="admin")
 			{
 				HttpSession session=request.getSession();
 				session.setAttribute("userId", userName);
-	            session.setMaxInactiveInterval(20);
+	                        session.setMaxInactiveInterval(20);
 				response.sendRedirect("AdminHome.jsp");
 			}
 			else if(validate=="employee")
 			{
 				HttpSession session=request.getSession();
 				session.setAttribute("userId", userName);
-			    session.setMaxInactiveInterval(20);
+		                session.setMaxInactiveInterval(20);
 				response.sendRedirect("EmployeeHome.jsp");
 			}
 			else
 			{
 				request.setAttribute("error", "Invalid Credentials");
-                RequestDispatcher rd=request.getRequestDispatcher("Login.jsp");
-                rd.include(request, response);
-            }
+                                RequestDispatcher rd=request.getRequestDispatcher("Login.jsp");
+                                rd.include(request, response);
+                        }
 		}
 		catch(Exception e)
 		{
