@@ -57,11 +57,11 @@ public class DisplayUserDetails extends HttpServlet {
 				out.println("<td>"+Email_Id+"</td></tr>");
 				out.println("<td>DEPARTMENT ID</td>");
 				out.println("<td>"+dept_Id+"</td></tr>");
-			    out.println("</div></table>");	
+			        out.println("</div></table>");	
 			}
 			
 			out.println("<input type='button' value='Home' onclick=\"location.href='AdminHome.jsp'\">");
-			 out.println("</body></html>");
+			out.println("</body></html>");
 			
 		}catch(Exception e)
 		{
