@@ -1,0 +1,79 @@
+@CHARSET "ISO-8859-1";
+body
+{
+    margin:0;
+    padding:0;
+	font-family:sans-serif;
+	background:#F0FFF0;
+}
+.form
+{
+	width:500px;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-20%);
+	background:#191919;
+	text-align:center;
+	border-radius:24px;
+}
+.form h1
+{
+	color:red;
+}
+.input
+{
+	background:none;
+	display:block;
+	margin:20px auto;
+	border:2px solid #3498db;
+	padding:14px 10px;
+	width:250px;
+	color:white;
+	transition:0.25s;
+}
+.input:focus
+{
+	width:280px;
+	border-color:#2ecc71;
+}
+.click
+{
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #2ecc71;
+	padding:14px 25px;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+
+.click:hover
+{
+	background:#2ecc71;
+}
+h3
+{
+color:white;
+}
+input[type="button"]
+{
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #2ecc71;
+	padding:14px 25px;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+input[type="button"]
+{
+	background:#2ecc71;
+}
