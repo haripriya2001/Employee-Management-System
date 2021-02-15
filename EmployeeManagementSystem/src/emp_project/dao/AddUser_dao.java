@@ -10,17 +10,17 @@ public class AddUser_dao {
 		
 		try
 		{
-			PreparedStatement statement=Login_db.getPreparedStatement("insert into employee values(?,?,?,?,?,?)");
-            statement.setInt(1, emp_Id);
-            statement.setString(2, f_Name);
-            statement.setString(3, l_Name);
-            statement.setString(4, DOB);
-            statement.setString(5,email_Id);
-            statement.setInt(6, dept_Id);
-            int count=statement.executeUpdate();
-            System.out.println(count+" row/s affected");
-            return true;
-        }catch(Exception e)
+	            PreparedStatement statement=Login_db.getPreparedStatement("insert into employee values(?,?,?,?,?,?)");
+		    statement.setInt(1, emp_Id);
+		    statement.setString(2, f_Name);
+		    statement.setString(3, l_Name);
+		    statement.setString(4, DOB);
+		    statement.setString(5,email_Id);
+		    statement.setInt(6, dept_Id);
+		    int count=statement.executeUpdate();
+		    System.out.println(count+" row/s affected");
+		    return true;
+                }catch(Exception e)
 		{
         	e.printStackTrace();	
 		}
