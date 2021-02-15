@@ -10,7 +10,7 @@
 <style>
 input[type="button"]
 {
-    background:none;
+        background:none;
 	display:block;
 	margin:20px auto;
 	text-align:center;
