@@ -15,7 +15,7 @@ public class CommentsExistOrNot {
 		ResultSet resultset=statement.executeQuery();
 			while(resultset.next())
 			{
-			    int reg_Id=resultset.getInt(1);
+			        int reg_Id=resultset.getInt(1);
 				String Status=resultset.getString(2);
 				int emp_Id=resultset.getInt(3);
 				String Create_Date=resultset.getString(5);
