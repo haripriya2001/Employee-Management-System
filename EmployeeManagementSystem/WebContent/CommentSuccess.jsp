@@ -7,8 +7,8 @@
 <title>CommentsSuccess</title>
 <style>
 h1{
-text-align:center;
-text-shadow: 2px 2px 2px #2ecc71;
+	text-align:center;
+	text-shadow: 2px 2px 2px #2ecc71;
 }
 .click
 {
