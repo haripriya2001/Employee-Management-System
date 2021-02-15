@@ -11,6 +11,6 @@
 <form class="form" action="UserRegulation" method="post">
 		<input class="input" type="text" name="dept_Id" placeholder="Department Id">
 		<input class="click" type="submit" value="show">
-	</form>
+</form>
 </body>
 </html>
