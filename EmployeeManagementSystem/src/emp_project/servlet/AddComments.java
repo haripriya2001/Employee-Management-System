@@ -35,7 +35,7 @@ public class AddComments extends HttpServlet {
 		String Status=request.getParameter("status");
 		int Reg_Id=Integer.parseInt(reg_Id);
 		int Dept_Id=Integer.parseInt(dept_Id);
-        int Emp_Id=Integer.parseInt(emp_Id);
+                int Emp_Id=Integer.parseInt(emp_Id);
         	if(AddComments_dao.insertComment(Reg_Id,CreationDate,Emp_Id,Comments,Status,Dept_Id))
         	{
         		response.sendRedirect("CommentSuccess.jsp");
